@@ -1,372 +1,361 @@
 
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "영업용운전자보험과 일반 운전자보험의 차이는 무엇인가요?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "영업용은 노란색 번호판을 사용하는 차량을 운행하는 운전자를 대상으로 하며, 운행 시간이 길어 사고 발생 확률이 높기 때문에 관련 특약과 요율이 다르게 적용됩니다."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "민식이법 관련 보장도 포함되나요?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "네, 2026년 기준 모든 영업용운전자보험은 스쿨존 사고 벌금 및 형사합의금 증액분을 반영하여 설계됩니다."
-          }
-        }
+  <style>
+    /* 다채롭고 부드러운 디자인 테마 */
+    :root {
+      --primary-color: #1a73e8;
+      --secondary-color: #f1f3f4;
+      --accent-color: #e8f0fe;
+      --text-dark: #202124;
+      --text-gray: #5f6368;
+      --point-orange: #fb8c00;
+      --border-radius: 12px;
+    }
+
+    body {
+      font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.8;
+      color: var(--text-dark);
+      background: #f8f9fa;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+      color: #fff;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      letter-spacing: -0.5px;
+    }
+
+    nav {
+      background: #fff;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      display: flex;
+      justify-content: center;
+      padding: 15px 0;
+    }
+
+    nav a {
+      margin: 0 20px;
+      text-decoration: none;
+      color: var(--text-gray);
+      font-weight: 600;
+      font-size: 1.05rem;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--primary-color);
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 40px;
+      background: #fff;
+      border-radius: var(--border-radius);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      color: var(--primary-color);
+      border-left: 5px solid var(--primary-color);
+      padding-left: 15px;
+      margin-bottom: 30px;
+    }
+
+    h3 {
+      font-size: 1.4rem;
+      color: #333;
+      margin-top: 30px;
+    }
+
+    /* 테이블 스타일링 */
+    .compare-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+
+    .compare-table th, .compare-table td {
+      border: 1px solid #e0e0e0;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .compare-table th {
+      background-color: var(--secondary-color);
+      font-weight: 700;
+    }
+
+    /* 폼 스타일링 */
+    .form-container {
+      background: var(--accent-color);
+      padding: 30px;
+      border-radius: var(--border-radius);
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+
+    .form-group input, .form-group select, .form-group textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      box-sizing: border-box;
+    }
+
+    .cta-button {
+      background: var(--point-orange);
+      color: #fff;
+      padding: 18px 40px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1.2rem;
+      font-weight: 700;
+      cursor: pointer;
+      width: 100%;
+      transition: background 0.3s;
+    }
+
+    .cta-button:hover {
+      background: #e67e00;
+    }
+
+    .info-box {
+      background: #fdf7f2;
+      border-left: 4px solid var(--point-orange);
+      padding: 20px;
+      margin: 20px 0;
+    }
+
+    footer {
+      background: #333;
+      color: #ccc;
+      padding: 40px 20px;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    .external-links a {
+      color: var(--primary-color);
+      text-decoration: none;
+      margin: 0 10px;
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "영업용운전자보험비교 센터",
+    "description": "개인택시, 화물차, 버스 등 영업용 운전자를 위한 최적의 운전자보험 비교 서비스",
+    "provider": {
+      "@type": "Organization",
+      "name": "전문보험비교연구소"
+    },
+    "areaServed": "KR",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "운전자보험 상품군",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "화물차 운전자보험" }},
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "택시/버스 운전자보험" }},
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "배달용 이륜차 운전자보험" }}
       ]
     }
-    </script>
-
-    <style>
-        :root {
-            --primary-color: #4a90e2;
-            --secondary-color: #5c6bc0;
-            --accent-color: #ff7043;
-            --bg-light: #f4f7f9;
-            --text-dark: #2c3e50;
-            --text-muted: #7f8c8d;
-            --white: #ffffff;
-        }
-
-        body {
-            font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.8;
-            color: var(--text-dark);
-            background-color: var(--bg-light);
-        }
-
-        header {
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-            color: var(--white);
-            padding: 60px 20px;
-            text-align: center;
-        }
-
-        header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-            font-weight: 800;
-            letter-spacing: -1px;
-        }
-
-        header p {
-            font-size: 1.2rem;
-            opacity: 0.9;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        nav {
-            position: sticky;
-            top: 0;
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            border-bottom: 1px solid #eee;
-            z-index: 1000;
-            padding: 15px 0;
-            text-align: center;
-        }
-
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: var(--text-dark);
-            font-weight: 600;
-            font-size: 0.95rem;
-            transition: color 0.3s;
-        }
-
-        nav a:hover {
-            color: var(--primary-color);
-        }
-
-        .container {
-            max-width: 1100px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
-
-        section {
-            background: var(--white);
-            padding: 40px;
-            border-radius: 16px;
-            margin-bottom: 30px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-        }
-
-        h2 {
-            font-size: 1.8rem;
-            color: var(--secondary-color);
-            border-left: 5px solid var(--primary-color);
-            padding-left: 15px;
-            margin-bottom: 25px;
-        }
-
-        h3 {
-            font-size: 1.4rem;
-            margin-top: 30px;
-            color: var(--primary-color);
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-        }
-
-        table th, table td {
-            border: 1px solid #e0e0e0;
-            padding: 15px;
-            text-align: center;
-        }
-
-        table th {
-            background-color: #f8f9fa;
-            font-weight: 700;
-        }
-
-        .calculator-box {
-            background: #eef2f7;
-            padding: 30px;
-            border-radius: 12px;
-            border: 1px dashed var(--primary-color);
-        }
-
-        .form-group {
-            margin-bottom: 20px;
-        }
-
-        label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: 600;
-        }
-
-        input, select, textarea {
-            width: 100%;
-            padding: 12px;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            box-sizing: border-box;
-            font-size: 1rem;
-        }
-
-        .btn-submit {
-            background-color: var(--primary-color);
-            color: white;
-            padding: 18px;
-            border: none;
-            border-radius: 8px;
-            font-size: 1.1rem;
-            font-weight: 700;
-            cursor: pointer;
-            width: 100%;
-            transition: background 0.3s;
-        }
-
-        .btn-submit:hover {
-            background-color: var(--secondary-color);
-        }
-
-        .info-link {
-            display: inline-block;
-            margin-right: 15px;
-            color: var(--primary-color);
-            text-decoration: none;
-            font-size: 0.9rem;
-        }
-
-        .info-link:hover {
-            text-decoration: underline;
-        }
-
-        .keyword-cloud {
-            background: #f1f1f1;
-            padding: 20px;
-            border-radius: 8px;
-            font-size: 0.85rem;
-            color: #666;
-            margin-top: 50px;
-        }
-
-        footer {
-            text-align: center;
-            padding: 40px;
-            color: var(--text-muted);
-            font-size: 0.9rem;
-        }
-    </style>
+  }
+  </script>
 </head>
 <body>
 
 <header>
-    <h1>2026 영업용운전자보험비교 분석 보고서</h1>
-    <p>화물차, 택시, 버스 운전자를 위한 법적 방어 비용 및 형사합의금 최신 동향을 반영한 통합 비교 가이드입니다.</p>
+  <h1>영업용운전자보험비교 및 2026 최신 가이드</h1>
+  <p>생계를 책임지는 운행, 단 한번의 사고로 무너지지 않도록 전문가가 분석한 최적의 담보를 확인하십시오.</p>
 </header>
 
 <nav>
-    <a href="#필요성">가입 필요성</a>
-    <a href="#비교분석">핵심 담보 비교</a>
-    <a href="#보험료계산">예상 보험료 계산</a>
-    <a href="#전문가팁">가입 팁</a>
-    <a href="#자주묻는질문">FAQ</a>
+  <a href="#필요성">가입 필요성</a>
+  <a href="#비교분석">핵심 담보 비교</a>
+  <a href="#맞춤견적">무료 견적 신청</a>
+  <a href="#자주묻는질문">상세 FAQ</a>
+  <a href="#전문자료">참조 자료</a>
 </nav>
 
-<div class="container">
+<section id="필요성">
+  <h2>영업용 운전자보험이란 무엇인가</h2>
+  <p>영업용 운전자보험은 화물차, 택시, 버스, 렌터카 등 수익을 목적으로 차량을 운행하는 운전자가 반드시 검토해야 하는 금융 상품입니다. 일반 자가용 운전자보험과는 달리 운행 시간이 길고 사고 발생 확률이 상대적으로 높기 때문에, 면허 정지나 취소 시 생계 지원금 등 특화된 담보가 포함됩니다.</p>
+  
+  <div class="info-box">
+    <strong>함께 많이 찾는 키워드 및 관련 정보</strong>
+    <p>화물차 자동차보험 차이, 영업용 운전자보험 환급형, 개인택시 공제조합 비교, 1톤 트럭 보험료, 노란번호판 보험 혜택</p>
+  </div>
 
-    <section id="필요성">
-        <h2>영업용운전자보험비교 선택이 아닌 필수인 이유</h2>
-        <p>
-            2026년 현재, 도로교통법의 강화와 교통사고 처리 특례법의 엄격한 적용으로 인해 영업용 차량 운전자의 리스크 관리가 어느 때보다 중요해졌습니다. 영업용운전자보험은 일반 승용차와 달리 연간 주행거리가 월등히 많고, 사고 시 생계와 직결되는 면허 정지 및 취소에 대한 방어 기제 역할을 합니다. 
-        </p>
-        <p>
-            주요 통계에 따르면 영업용 화물차의 사고율은 일반 차량 대비 약 3배 이상 높게 나타나고 있습니다. 이에 따라 각 보험사는 변호사 선임 비용의 선지급 시스템과 6대 중과실 사고에 대한 형사합의금 보장 범위를 대폭 확대하고 있습니다. 영업용운전자보험비교를 통해 본인에게 가장 적합한 담보를 구성하는 것이 경제적 손실을 막는 지름길입니다.
-        </p>
-    </section>
+  <h3>영업용 운전자보험이 필수적인 이유</h3>
+  <ul>
+    <li>교통사고 처리 지원금: 형사 합의가 필요한 중대 과실 사고 발생 시 합의 비용 지원</li>
+    <li>변호사 선임 비용: 구속 영장 또는 공판 청구 시 전문적인 법률 대응 지원</li>
+    <li>벌금 확정 판결: 대인/대물 사고로 인한 법정 벌금 납부액 보장</li>
+    <li>면허 정지 및 취소 위로금: 영업용 운전자에게 치명적인 면허 효력 상실에 대한 소득 보전</li>
+  </ul>
+</section>
 
-    <section id="비교분석">
-        <h2>주요 보험사별 영업용운전자보험 보장 비교 (2026년 기준)</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>구분</th>
-                    <th>교통사고처리지원금</th>
-                    <th>변호사선임비용</th>
-                    <th>벌금(대인/대물)</th>
-                    <th>특이사항</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>A사 (화물특화)</td>
-                    <td>최대 2.5억원</td>
-                    <td>최대 5천만원</td>
-                    <td>3천만원 / 5백만원</td>
-                    <td>적재물 배상책임 연계 가능</td>
-                </tr>
-                <tr>
-                    <td>B사 (택시특화)</td>
-                    <td>최대 2억원</td>
-                    <td>최대 5천만원</td>
-                    <td>3천만원 / 5백만원</td>
-                    <td>면허정지 위로금 일당 강화</td>
-                </tr>
-                <tr>
-                    <td>C사 (버스특화)</td>
-                    <td>최대 2.2억원</td>
-                    <td>최대 7천만원</td>
-                    <td>3천만원 / 5백만원</td>
-                    <td>다인승 사고 법적 방어특약</td>
-                </tr>
-            </tbody>
-        </table>
-        <p>
-            위 표에서 알 수 있듯이 보험사마다 주력으로 내세우는 보장 금액과 특약이 상이합니다. 특히 최근에는 경찰 조사 단계부터 변호사를 선임할 수 있는 '경찰조사 단계 변호사 선임비용' 특약이 영업용운전자보험비교 시 가장 큰 변수로 작용하고 있습니다.
-        </p>
-    </section>
 
-    <section id="보험료계산">
-        <h2>상세 견적 및 상담 신청</h2>
-        <p>정확한 영업용운전자보험비교를 위해 아래 정보를 입력해 주세요. 전문 상담원이 각 사의 요율을 비교하여 최적의 플랜을 제시해 드립니다.</p>
-        <div class="calculator-box">
-            <form action="#" method="post">
-                <div class="form-group">
-                    <label for="vehicle_type">운행 차량 종류</label>
-                    <select id="vehicle_type" name="vehicle_type" required>
-                        <option value="">차종을 선택하세요</option>
-                        <option value="taxi">개인/법인 택시</option>
-                        <option value="truck_under_5">5톤 미만 화물차</option>
-                        <option value="truck_over_5">5톤 이상 대형 화물차</option>
-                        <option value="bus">시내/광역/관광 버스</option>
-                        <option value="delivery">이륜차(배달영업용)</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="career">운전 경력</label>
-                    <select id="career" name="career">
-                        <option value="1">1년 미만</option>
-                        <option value="5">1년 ~ 5년</option>
-                        <option value="10">5년 ~ 10년</option>
-                        <option value="20">10년 이상</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="name">성함</label>
-                    <input type="text" id="name" name="name" placeholder="실명을 입력하세요" required>
-                </div>
-                <div class="form-group">
-                    <label for="phone">연락처</label>
-                    <input type="tel" id="phone" name="phone" placeholder="010-0000-0000" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">문의 사항 (선택사항)</label>
-                    <textarea id="message" name="message" rows="4" placeholder="희망 보장 금액이나 궁금한 점을 적어주세요"></textarea>
-                </div>
-                <div class="form-group" style="display:flex; align-items:center;">
-                    <input type="checkbox" id="privacy" name="privacy" style="width:20px; margin-right:10px;" required>
-                    <label for="privacy" style="margin-bottom:0; font-size:0.85rem;">개인정보 수집 및 이용 동의 (보험 비교 상담 목적)</label>
-                </div>
-                <button type="submit" class="btn-submit">내 맞춤 보험료 확인하기</button>
-            </form>
-        </div>
-    </section>
 
-    <section id="전문가팁">
-        <h2>영업용운전자보험 가입 시 주의사항 (D.I.A 로직 가이드)</h2>
-        <p>
-            많은 분이 영업용운전자보험비교 시 보험료에만 집중하지만, 실제 사고 발생 시 가장 중요한 것은 <strong>면책 조항</strong>입니다. 특히 영업용 차량은 일반 승용차와 달리 '유상운송' 여부에 따라 보장이 제한될 수 있으므로, 반드시 증권 상에 영업용으로 명시되어 있는지 확인해야 합니다.
-        </p>
-        <ul>
-            <li><strong>비경구 보상 확인:</strong> 단순 사고 외에 면허 정지, 취소 시 지급되는 일당이 현실적인지 확인하십시오.</li>
-            <li><strong>보장 한도 상향:</strong> 민식이법 등 관련 법규 강화로 인해 벌금 한도가 3,000만 원으로 상향된 플랜을 선택해야 합니다.</li>
-            <li><strong>변호사 선임 시점:</strong> 과거에는 구속 또는 기소 시에만 지급되었으나, 이제는 경찰 조사 시점부터 보장되는 상품이 유리합니다.</li>
-        </ul>
-    </section>
+<section id="비교분석">
+  <h2>핵심 담보 및 업계 평균 비용 비교</h2>
+  <p>영업용운전자보험비교 시 가장 중요한 것은 보장 한도와 보험료의 균형입니다. 다음은 주요 보험사들의 평균적인 담보 구성표입니다.</p>
 
-    <section id="자주묻는질문">
-        <h2>자주 묻는 질문 (FAQ)</h2>
-        <div class="faq-item">
-            <h3>질문: 기존 자동차 보험이 있는데 왜 운전자보험이 별도로 필요한가요?</h3>
-            <p>답변: 자동차 보험은 타인의 피해를 보상하는 '민사' 중심이며, 운전자보험은 나의 형사적 책임(벌금, 합의금, 변호사비)을 보호하는 '형사' 중심의 보험이기 때문입니다.</p>
-        </div>
-        <div class="faq-item">
-            <h3>질문: 법인 차량 운전자도 개별 가입이 가능한가요?</h3>
-            <p>답변: 네, 법인에서 가입해준 보험이 있더라도 보장 한도가 부족하거나 본인 명의의 확실한 보장을 위해 개별 가입하는 사례가 매우 많습니다.</p>
-        </div>
-    </section>
+  <table class="compare-table">
+    <thead>
+      <tr>
+        <th>구분</th>
+        <th>주요 보장 내용</th>
+        <th>보장 한도 (평균)</th>
+        <th>비고</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>교통사고처리지원금</td>
+        <td>형사합의금 실손 보장</td>
+        <td>최대 2억원</td>
+        <td>6주 미만 사고 포함 여부 확인</td>
+      </tr>
+      <tr>
+        <td>변호사선임비용</td>
+        <td>경찰 조사 단계 포함</td>
+        <td>최대 5,000만원</td>
+        <td>불기소/약식기소 단계 포함 추세</td>
+      </tr>
+      <tr>
+        <td>운전자 벌금</td>
+        <td>대인 최대 한도 보장</td>
+        <td>최대 3,000만원</td>
+        <td>스쿨존 사고(민식이법) 대응</td>
+      </tr>
+      <tr>
+        <td>면허정지 위로금</td>
+        <td>일당 형식 지급</td>
+        <td>일 3~5만원</td>
+        <td>최대 120일 한도</td>
+      </tr>
+    </tbody>
+  </table>
 
-    <section id="외부참조">
-        <h2>신뢰할 수 있는 관련 정보 링크</h2>
-        <p>더 상세한 법규 및 통계 정보는 아래 기관에서 확인하실 수 있습니다.</p>
-        <div style="margin-top:15px;">
-            <a href="https://www.fss.or.kr" class="info-link" target="_blank" rel="nofollow">금융감독원</a>
-            <a href="https://www.knia.or.kr" class="info-link" target="_blank" rel="nofollow">손해보험협회</a>
-            <a href="https://www.koroad.or.kr" class="info-link" target="_blank" rel="nofollow">도로교통공단</a>
-            <a href="https://www.nts.go.kr" class="info-link" target="_blank" rel="nofollow">국세청(보험료 세액공제 안내)</a>
-            <a href="https://namu.wiki/w/%EC%9A%B4%EC%A0%84%EC%9E%90%EB%B3%B4%ED%97%98" class="info-link" target="_blank" rel="nofollow">나무위키: 운전자보험 정보</a>
-        </div>
-    </section>
+  <h3>연관 키워드 분석: 가입 시 주의사항</h3>
+  <p>영업용 자동차보험과 운전자보험을 혼동하는 경우가 많으나, 자동차보험은 '민사적 책임'을, 운전자보험은 '형사적 및 행정적 책임'을 보장한다는 점이 다릅니다. 특히 덤프트럭, 크레인 등 건설기계 운전자의 경우 특약 가입 가능 여부를 사전에 반드시 체크해야 합니다.</p>
+</section>
 
-    <div class="keyword-cloud">
-        <strong>함께 검색된 키워드:</strong> 
-        영업용운전자보험비교사이트 순위, 개인택시 운전자보험 추천, 25톤 화물차 보험료 계산, 영업용 운전자보험 벌금 특약, 12대 중과실 사고 합의금, 2026년 운전자보험 개정안, 운전자보험 해지 환급금, 비갱신형 영업용운전자보험 비교
-    </div>
+<section id="맞춤견적">
+  <h2>상세 조건 입력 및 무료 비교 견적 신청</h2>
+  <p>본인의 운행 환경(차종, 경력, 연령)에 따라 보험료 차이가 크게 발생합니다. 아래 정보를 입력하시면 실시간 비교 분석 리포트를 보내드립니다.</p>
+  
+  <div class="form-container">
+    <form action="#" method="post">
+      <div class="form-group">
+        <label for="name">성함 (실명)</label>
+        <input type="text" id="name" name="user_name" placeholder="성함을 입력하세요">
+      </div>
+      
+      <div class="form-group">
+        <label for="phone">연락처</label>
+        <input type="tel" id="phone" name="user_phone" placeholder="010-0000-0000">
+      </div>
 
-</div>
+      <div class="form-group">
+        <label for="car_type">운행 차종</label>
+        <select id="car_type" name="car_type">
+          <option value="taxi">개인/법인 택시</option>
+          <option value="truck_under_5">5톤 이하 화물차</option>
+          <option value="truck_over_5">5톤 초과 대형 화물</option>
+          <option value="bus">시외/시내 버스</option>
+          <option value="delivery">배달용 이륜차</option>
+          <option value="etc">기타 특수 차량</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="exp">운전 경력</label>
+        <select id="exp" name="exp">
+          <option value="1">1년 미만</option>
+          <option value="5">1년 ~ 5년</option>
+          <option value="10">5년 ~ 10년</option>
+          <option value="20">10년 이상</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="current_ins">현재 가입 중인 보험사</label>
+        <input type="text" id="current_ins" name="current_ins" placeholder="없을 경우 '없음' 기재">
+      </div>
+
+      <div class="form-group">
+        <label for="memo">추가 문의 사항 (보장 희망 금액 등)</label>
+        <textarea id="memo" name="memo" rows="4" placeholder="상세한 상담을 원하시는 내용을 적어주세요"></textarea>
+      </div>
+
+      <div class="form-group">
+        <label><input type="checkbox" required> 개인정보 수집 및 이용에 동의합니다.</label>
+      </div>
+
+      <button type="submit" class="cta-button">최저가 비교 결과 확인하기</button>
+    </form>
+  </div>
+</section>
+
+<section id="자주묻는질문">
+  <h2>자주 묻는 질문 (FAQ)</h2>
+  <div class="faq-item">
+    <h3>Q1. 자가용 운전자보험이 있는데 영업할 때 보장이 되나요?</h3>
+    <p>A1. 아니요. 자가용으로 가입된 보험은 영업 중 사고 발생 시 보장이 제한되거나 면책될 수 있습니다. 반드시 영업용 용도에 맞는 전용 상품으로 가입하거나 용도 변경을 신청해야 합니다.</p>
+  </div>
+  
+  <div class="faq-item">
+    <h3>Q2. 화물차 공제조합과 민영 보험사 중 어디가 유리한가요?</h3>
+    <p>A2. 공제조합은 가격이 상대적으로 저렴할 수 있으나, 운전자보험의 핵심인 법률 비용 보장 한도는 민영 보험사가 더 넓고 높은 경우가 많습니다. '영업용운전자보험비교'를 통해 특약 구성을 세밀하게 비교하는 것이 좋습니다.</p>
+  </div>
+
+  <div class="faq-item">
+    <h3>Q3. 음주운전이나 무면허 사고도 보장되나요?</h3>
+    <p>A3. 아니요. 음주, 무면허, 뺑소니 사고는 보험의 기본 취지에 반하는 중대 범죄로 분류되어 모든 보험사에서 보장 대상에서 제외됩니다.</p>
+  </div>
+</section>
+
+<section id="전문자료">
+  <h2>신뢰성 있는 전문 자료 및 외부 링크</h2>
+  <p>보험 가입 전 관련 법규와 공신력 있는 기관의 정보를 확인하시면 보다 정확한 판단이 가능합니다.</p>
+  <div class="external-links">
+    <a href="https://www.fss.or.kr" target="_blank" rel="nofollow">금융감독원 (보험 규제 및 소비자 보호)</a> |
+    <a href="https://www.knia.or.kr" target="_blank" rel="nofollow">손해보험협회 (공시실 이용)</a> |
+    <a href="https://namu.wiki/w/%EC%9A%B4%EC%A0%84%EC%9E%90%EB%B3%B4%ED%97%98" target="_blank" rel="nofollow">나무위키: 운전자보험 정의</a> |
+    <a href="https://www.koroad.or.kr" target="_blank" rel="nofollow">도로교통공단 (교통법규 안내)</a> |
+    <a href="https://www.law.go.kr" target="_blank" rel="nofollow">국가법령정보센터 (교통사고처리 특례법 확인)</a>
+  </div>
+</section>
 
 <footer>
-    <p>본 페이지는 영업용운전자보험비교를 위한 정보를 제공하며 가입 시 해당 보험사의 약관을 반드시 확인하시기 바랍니다.</p>
-    <p>&copy; 2026 보험비교 데이터 센터 | 사업자번호: 000-00-00000 | 경기도 성남시 분당구 판교로</p>
+  <p>상호명: 영업용보험비교분석연구소 | 사업자번호: 000-00-00000 | 주소: 서울특별시 중구 세종대로 00</p>
+  <p>본 사이트는 보험 비교 분석 정보를 제공하며 직접적인 계약 체결의 당사자가 아닙니다. 가입 전 반드시 약관을 확인하시기 바랍니다.</p>
+  <p>&copy; 2026 영업용운전자보험비교 가이드 All Rights Reserved.</p>
 </footer>
 
-</body>
-</html>
+    
